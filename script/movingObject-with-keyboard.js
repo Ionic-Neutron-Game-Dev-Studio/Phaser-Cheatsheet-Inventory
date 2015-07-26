@@ -5,14 +5,13 @@
             var gameState = function(){ };
        
             gameState.prototype.preload = function(){
-                this.load.image("player","assets/player.png");
+                this.load.image("player","assets/pixel-player02.png");
                 this.load.image("platform","assets/platform.png");
                 
             };
             
             gameState.prototype.create = function(){
-                this.player = this.add.sprite(200,100,"player"); // I have declared a local variable 
-            // if u want use make it gloabal then declare it like - this.player
+                this.player = this.add.sprite(200,100,"player"); 
                 this.player.anchor.setTo(0.5,0.5);
                 
                 this.platform = this.add.sprite(game.world.height-150,game.world.height-15,"platform");
