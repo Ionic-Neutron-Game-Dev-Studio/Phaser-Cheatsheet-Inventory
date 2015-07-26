@@ -1,0 +1,10 @@
+<TextureAtlas imagePath="sprites.png">
+	<SubTexture name="animated-space-ship-700x408_000.png" x="0" y="1230" width="700" height="408"/>
+	<SubTexture name="animated-space-ship-700x408_001.png" x="702" y="820" width="700" height="408"/>
+	<SubTexture name="animated-space-ship-700x408_002.png" x="702" y="410" width="700" height="408"/>
+	<SubTexture name="animated-space-ship-700x408_003.png" x="702" y="0" width="700" height="408"/>
+	<SubTexture name="animated-space-ship-700x408_004.png" x="702" y="1230" width="700" height="408"/>
+	<SubTexture name="animated-space-ship-700x408_005.png" x="0" y="820" width="700" height="408"/>
+	<SubTexture name="animated-space-ship-700x408_006.png" x="0" y="410" width="700" height="408"/>
+	<SubTexture name="animated-space-ship-700x408_007.png" x="0" y="0" width="700" height="408"/>
+</TextureAtlas>
