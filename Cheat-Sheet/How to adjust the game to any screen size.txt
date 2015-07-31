@@ -1,0 +1,36 @@
+scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+scale.pageAlignHorizontally = true;
+scale.pageAlignVertically = true;
+
+scale.setScreenSize(true);
+
+
+**** A variation *****
+
+if (game.device.desktop) //if playing on desktop
+ {
+ game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL; //always show whole game
+ game.scale.pageAlignHorizontally = true; //align horizontally
+ }
+ else
+ {
+ game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+
+ game.scale.minWidth = 150;  //set up minimum and maximum game widths allowed.
+ game.scale.minHeight = 250;  
+
+//above and below these limits, the show_all attribute wont bother scaling
+
+ game.scale.maxWidth = 600;
+ game.scale.maxHeight = 1000;
+ game.scale.forceLandscape = false;
+ game.scale.pageAlignHorizontally = true; // If you wish to align your game in the middle of the page then you can set this value to true.
+ }
+ 
+ game.scale.setScreenSize(true);  //apply the setting we set up
+
+
+
+---------------------------------------------------------
++ Reference: http://docs.phaser.io/Phaser.ScaleManager.html + 
+---------------------------------------------------------
